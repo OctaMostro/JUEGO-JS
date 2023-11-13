@@ -1,0 +1,50 @@
+@font-face {
+    font-family: lol;
+    src: url(./Fonts_Package/BeaufortForLoL-OTF/BeaufortforLOL-Heavy.otf);
+}
+body {
+    background-image: url(./img/FONDOLOL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0; /* Asegura que no hay margen exterior en el cuerpo */
+    font-family: lol;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#MENU-INICIO, #creditos-menu {
+    text-align: center;
+    display: none;
+}
+
+#MENU-INICIO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#creditos-menu {
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto; /* Añadido un margen superior */
+}
+
+#iniciar-juego, #creditos, #boton-volver {
+    margin-top: 20px;
+}

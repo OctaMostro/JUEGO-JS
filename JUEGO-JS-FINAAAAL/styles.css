@@ -1,0 +1,34 @@
+@font-face {
+    font-family: lol;
+    src: url(./Fonts_Package/BeaufortForLoL-OTF/BeaufortforLOL-Heavy.otf);
+}
+
+body{
+    font-family: lol;
+    text-align: center;
+    background-image: url(./img/FONDOLOL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50PX;
+}
+
+#board{
+    background-image: url("./img/cielo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#piso{
+    width: 900px;
+    position:absolute;
+    padding-top: 480px;
+}
+
+#pausa{
+    margin-top: auto;
+    margin-right: 75px;
+}
+
+.oculto{
+    display: none;
+}

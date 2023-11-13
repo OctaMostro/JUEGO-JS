@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./menu.js"></script>
+</head>
+<body>
+
+    <div id="MENU-INICIO">
+    <h1> YOSHI EN LA BUSQUEDA DE DEJAR EL LOL</h1>
+    <img class="img" src="./img/yoshilol.webp" alt="">
+    <button id="iniciar-juego" onclick="window.location.href='./index.html'">INICIAR</button>
+    <button id="creditos">CREDITOS</button>
+    </div>
+
+    <div id="creditos-menu">
+        <h1>CREDITOS</h1>
+        <li>PROGRAMADOR GENERAL: Octavio Arias</li>
+        <li>DISEÑOS DE SPRITES: Maria Zdanovitch</li>
+        <li>ORIENTACION ACADEMICA: German "Gerson" Sanchez</li>
+        <button id="boton-volver"> Volver al Inicio</button>
+    </div>
+
+    <script>
+        document.getElementById("creditos").addEventListener("click", function() {
+            document.getElementById("MENU-INICIO").style.display = "none";
+            document.getElementById("creditos-menu").style.display = "block";
+        });
+    
+        document.getElementById("boton-volver").addEventListener("click", function() {
+            document.getElementById("MENU-INICIO").style.display = "block";
+            document.getElementById("creditos-menu").style.display = "none";
+        });
+    </script>
+
+</body>
+</html>
